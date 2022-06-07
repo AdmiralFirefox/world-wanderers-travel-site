@@ -1,6 +1,7 @@
 const navToggler = document.querySelector(".nav-toggler");
 const navMenu = document.querySelector(".site-navbar ul");
 const navLinks = document.querySelectorAll(".site-navbar a");
+const navBar = document.querySelector(".navbar-area");
 
 // functions of all event listners
 const allEventListners = () => {
@@ -20,6 +21,19 @@ const togglerClick = () => {
 const navLinkClick = () => {
   if (navMenu.classList.contains("open")) {
     navToggler.click();
+  }
+};
+
+// Change navbar color when scrolled
+window.onscroll = () => {
+  "use strict";
+  if (
+    document.body.scrollTop >= 100 ||
+    document.documentElement.scrollTop >= 100
+  ) {
+    navBar.classList.add("navbar-scroll");
+  } else {
+    navBar.classList.remove("navbar-scroll");
   }
 };
 

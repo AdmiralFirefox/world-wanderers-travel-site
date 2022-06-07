@@ -21,7 +21,6 @@
 }
 
 .header-area {
-  background: #000;
   background-position: center center;
   background-size: cover;
   position: fixed;
@@ -31,8 +30,13 @@
 }
 
 .navbar-area {
-  background: rgba(0, 0, 0, 0.6);
-  border-bottom: 1px solid #000;
+  background-color: transparent;
+  padding: 0.3em;
+  transition: background 0.5s ease-in-out;
+}
+
+.navbar-scroll {
+  background: #000;
 }
 
 .site-navbar {
@@ -133,6 +137,10 @@ a.site-logo img {
 @media screen and (max-width: 48em) {
   .container {
     max-width: 720px;
+  }
+
+  .navbar-area {
+    background: #000;
   }
 
   .nav-toggler {
