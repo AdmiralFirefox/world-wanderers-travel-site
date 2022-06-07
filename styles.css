@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+
+:root {
+  --white-color: #fff;
+}
 
 * {
   margin: 0;
@@ -149,8 +153,7 @@ a.site-logo img {
     top: 60px;
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid #444;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: #000;
     max-height: 0;
     overflow: hidden;
     transition: 0.3s ease-in-out;
@@ -183,5 +186,47 @@ a.site-logo img {
   .intro-area h2 {
     font-size: 36px;
     margin-bottom: 15px;
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  background: url("/assets/homepage/HeroBackground.jpg"), rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-section .hero-content {
+  margin: 0em 1em 4em 1.5em;
+}
+
+.hero-section .hero-content h1 {
+  color: var(--white-color);
+  font-size: min(max(2rem, 4vw), 3.3rem);
+  width: min(100%, 15em);
+}
+
+.hero-section .hero-content p {
+  color: var(--white-color);
+  font-size: min(max(1.1rem, 2vw), 1.8rem);
+  margin-top: 1em;
+  font-weight: 700;
+  width: min(100%, 20em);
+}
+
+@media screen and (min-width: 48em) {
+  .hero-section {
+    height: 90vh;
+    width: 100%;
+  }
+
+  .hero-section .hero-content {
+    margin-left: 4.5em;
+    margin-bottom: 8em;
   }
 }
