@@ -59,15 +59,28 @@ a.site-logo img {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
-.site-navbar ul li a:hover {
-  background: rgba(255, 255, 255, 0.1);
+.site-navbar ul li a::after {
+  content: "";
+  background: #fff;
+  width: 0%;
+  height: 0.25em;
+  position: relative;
+  top: 0.5em;
+  display: block;
+  transition: width 0.5s ease-in-out;
 }
 
+.site-navbar ul li a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger Icon */
 .nav-toggler {
-  border: 3px solid #fff;
+  border: none;
+  outline: none;
   padding: 5px;
   background-color: transparent;
   cursor: pointer;
@@ -107,6 +120,7 @@ a.site-logo img {
   transform: translateY(-3px) rotate(-45deg);
 }
 
+/* Navbar Mobile View */
 @media screen and (max-width: 48em) {
   .container {
     max-width: 720px;
@@ -126,6 +140,7 @@ a.site-logo img {
     margin-left: 1em;
   }
 
+  /* Nav Links */
   .site-navbar ul {
     position: absolute;
     width: 100%;
@@ -138,7 +153,7 @@ a.site-logo img {
     background-color: rgba(0, 0, 0, 0.75);
     max-height: 0;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
   }
 
   .site-navbar ul li {
@@ -147,11 +162,17 @@ a.site-logo img {
   }
 
   .site-navbar ul li a {
-    padding: 25px;
+    background: transparent;
+    padding: 1.5em;
+    transition: background 0.5s ease-in-out;
   }
 
   .site-navbar ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background: #555;
+  }
+
+  .site-navbar ul li a:hover::after {
+    width: 0;
   }
 
   .site-navbar ul.open {
