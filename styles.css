@@ -2,6 +2,7 @@
 
 :root {
   --white-color: #fff;
+  --orange-color: #c34415;
 }
 
 * {
@@ -229,4 +230,25 @@ a.site-logo img {
     margin-left: 4.5em;
     margin-bottom: 8em;
   }
+}
+
+/* Wanderer Section */
+.wanderer-section {
+  display: flex;
+  justify-content: center;
+  background: var(--orange-color);
+  padding: 2.5em 2.7em;
+}
+
+.wanderer-section .wanderer-section-content h1 {
+  color: var(--white-color);
+  text-align: center;
+  font-size: min(max(2rem, 3vw), 2.5rem);
+}
+
+.wanderer-section .wanderer-section-content p {
+  color: var(--white-color);
+  text-align: center;
+  font-size: min(max(1rem, 1.5vw), 1.3rem);
+  margin-top: 1em;
 }
