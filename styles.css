@@ -332,3 +332,32 @@ a.site-logo img {
     margin-left: 4em;
   }
 }
+
+/* Travel Section */
+.travel-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+  grid-gap: 2em;
+  padding: 0em 2em;
+  align-content: flex-start;
+  margin: 1.5em 0em 5em 0em;
+}
+
+.travel-section article h1 {
+  margin-bottom: 0.7em;
+  font-size: 1.7rem;
+  color: var(--black-color);
+}
+
+.travel-section article p {
+  color: var(--black-color);
+  width: min(90%, 22em);
+  font-size: 0.95rem;
+  line-height: 1.5em;
+}
+
+@media screen and (min-width: 48em) {
+  .travel-section {
+    padding: 0em 7em;
+  }
+}
