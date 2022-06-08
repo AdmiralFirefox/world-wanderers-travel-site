@@ -5,6 +5,8 @@
   --black-color: #000;
   --orange-color: #c34415;
   --dark-gray-color: #555;
+  --pink-color: #ec2d6c;
+  --pink-color-hover: hsl(340, 83%, 60%);
 }
 
 * {
@@ -264,4 +266,69 @@ a.site-logo img {
   text-align: center;
   font-size: min(max(1rem, 1.5vw), 1.3rem);
   margin-top: 1em;
+}
+
+/* Experience Section */
+.experience-section {
+  display: flex;
+  justify-content: center;
+  margin: 5em 0em;
+}
+
+.experience-section .experience-section-wrapper {
+  background: url("/assets/homepage/TajMahal.jpg"), rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  width: min(90%, 60em);
+  height: 30em;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.experience-section .experience-section-wrapper .experience-section-content {
+  margin-left: 1.5em;
+}
+
+.experience-section .experience-section-wrapper .experience-section-content h1 {
+  width: min(90%, 8em);
+  color: var(--white-color);
+  font-size: min(max(2rem, 3vw), 2.5rem);
+}
+
+.experience-section
+  .experience-section-wrapper
+  .experience-section-content
+  button {
+  color: var(--white-color);
+  background: var(--pink-color);
+  border: none;
+  padding: 1.1em;
+  border-radius: 5px;
+  margin-top: 1em;
+  transition: background 0.35s ease-in-out;
+  cursor: pointer;
+}
+
+.experience-section
+  .experience-section-wrapper
+  .experience-section-content
+  button:hover {
+  background: var(--pink-color-hover);
+}
+
+.experience-section
+  .experience-section-wrapper
+  .experience-section-content
+  button:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 48em) {
+  .experience-section .experience-section-wrapper .experience-section-content {
+    margin-left: 4em;
+  }
 }
