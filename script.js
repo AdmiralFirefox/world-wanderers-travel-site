@@ -3,12 +3,13 @@ const navMenu = document.querySelector(".site-navbar ul");
 const navLinks = document.querySelectorAll(".site-navbar a");
 const navBar = document.querySelector(".navbar-area");
 
-// functions of all event listners
-const allEventListners = () => {
-  // toggler icon click event
-  navToggler.addEventListener("click", togglerClick);
-  // nav links click event
-  navLinks.forEach((elem) => elem.addEventListener("click", navLinkClick));
+// Change navbar color when scrolled
+const changeBackground = () => {
+  if (window.scrollY > 100) {
+    navBar.classList.add("navbar-scroll");
+  } else {
+    navBar.classList.remove("navbar-scroll");
+  }
 };
 
 // togglerClick function
@@ -24,17 +25,15 @@ const navLinkClick = () => {
   }
 };
 
-// Change navbar color when scrolled
-window.onscroll = () => {
-  "use strict";
-  if (
-    document.body.scrollTop >= 100 ||
-    document.documentElement.scrollTop >= 100
-  ) {
-    navBar.classList.add("navbar-scroll");
-  } else {
-    navBar.classList.remove("navbar-scroll");
-  }
+// functions of all event listners
+const allEventListners = () => {
+  // toggler icon click event
+  navToggler.addEventListener("click", togglerClick);
+  // nav links click event
+  navLinks.forEach((elem) => elem.addEventListener("click", navLinkClick));
+
+  window.addEventListener("scroll", changeBackground);
+  window.addEventListener("load", changeBackground);
 };
 
 // load all event listners
