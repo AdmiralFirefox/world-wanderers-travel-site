@@ -361,3 +361,121 @@ a.site-logo img {
     padding: 0em 7em;
   }
 }
+
+/* Carousel Section */
+.carousel-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 7em;
+}
+
+.carousel-section .carousel-section-title {
+  color: var(--black-color);
+  font-size: min(max(1.8rem, 3vw), 2.2rem);
+  width: min(80%, 12em);
+  margin-left: 1em;
+}
+
+.swiper {
+  width: min(90%, 60em);
+  height: 30em;
+  margin-top: 2em;
+}
+
+.swiper-wrapper {
+  list-style: none;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.swiper-slide .swiper-slide-content {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  padding: 0em 1.5em;
+}
+
+.swiper-slide .swiper-slide-content h1 {
+  color: var(--white-color);
+  font-size: min(max(2rem, 3.5vw), 3rem);
+  text-align: center;
+}
+
+.swiper-slide .swiper-slide-content button {
+  color: var(--white-color);
+  background: var(--pink-color);
+  border: none;
+  padding: 1.1em;
+  border-radius: 5px;
+  margin-top: 1.3em;
+  transition: background 0.35s ease-in-out;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.swiper-slide .swiper-slide-content button:hover {
+  background: var(--pink-color-hover);
+}
+
+.swiper-slide .swiper-slide-content button:focus {
+  outline: none;
+}
+
+/* Next Button */
+.swiper-button-next::after {
+  display: none;
+  color: var(--white-color);
+  font-weight: 700;
+}
+
+/* Prev Button */
+.swiper-button-prev::after {
+  display: none;
+  color: var(--white-color);
+  font-weight: 700;
+
+}
+
+/* Bullets */
+.swiper-pagination-bullet-active {
+  background-color: var(--white-color) !important;
+}
+
+@media screen and (min-width: 48em) {
+  .carousel-section .carousel-section-title {
+    margin-left: 2.5em;
+  }
+
+  .swiper {
+    margin-top: 3em;
+  }
+
+  /* Next Button */
+  .swiper-button-next::after {
+    display: block;
+  }
+
+  /* Prev Button */
+  .swiper-button-prev::after {
+    display: block;
+  }
+
+  /* Bullets */
+  .swiper-pagination-bullet {
+    display: none !important;
+  }
+}

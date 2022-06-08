@@ -39,3 +39,19 @@ window.onscroll = () => {
 
 // load all event listners
 allEventListners();
+
+// Swiper Config
+const swiper = new Swiper(".mySwiper", {
+  spaceBetween: 20,
+  loop: true,
+  speed: 1000,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

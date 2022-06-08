@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 
     <title>World Wanderers</title>
   </head>
@@ -88,12 +96,77 @@
         <article>
           <h1>Holiday ideas to match your interests</h1>
           <p>
-            Whether you want to stay in simple or luxurious accommodation, have a particular passion for wildlife, art or experiencing the great outdoors, or you're planning a trip for a special occasion, we can create an itinerary to match your interests and tastes.
+            Whether you want to stay in simple or luxurious accommodation, have
+            a particular passion for wildlife, art or experiencing the great
+            outdoors, or you're planning a trip for a special occasion, we can
+            create an itinerary to match your interests and tastes.
           </p>
         </article>
       </section>
+
+      <!-- Carousel Section -->
+      <section class="carousel-section">
+        <h1 class="carousel-section-title">Explore the Seven Wonders of the World</h1>
+        <div class="swiper mySwiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <img src="assets/homepage/Wonder1.jpg" alt="Wonder 1" />
+              <div class="swiper-slide-content">
+                <h1>Chichen Itza</h1>
+                <button>Guides and Maps</button>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <img src="assets/homepage/Wonder2.jpg" alt="Wonder 2" />
+              <div class="swiper-slide-content">
+                <h1>Christ The Redeemer</h1>
+                <button>Guides and Maps</button>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <img src="assets/homepage/Wonder3.jpg" alt="Wonder 3" />
+              <div class="swiper-slide-content">
+                <h1>The Colosseum</h1>
+                <button>Guides and Maps</button>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <img src="assets/homepage/Wonder4.jpg" alt="Wonder 4" />
+              <div class="swiper-slide-content">
+                <h1>Great Wall of China</h1>
+                <button>Guides and Maps</button>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <img src="assets/homepage/Wonder5.jpg" alt="Wonder 5" />
+              <div class="swiper-slide-content">
+                <h1>Machu Picchu</h1>
+                <button>Guides and Maps</button>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <img src="assets/homepage/Wonder6.jpg" alt="Wonder 6" />
+              <div class="swiper-slide-content">
+                <h1>Petra</h1>
+                <button>Guides and Maps</button>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <img src="assets/homepage/Wonder7.jpg" alt="Wonder 7" />
+              <div class="swiper-slide-content">
+                <h1>Taj Mahal</h1>
+                <button>Guides and Maps</button>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
     </main>
 
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
