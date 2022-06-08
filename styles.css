@@ -486,7 +486,7 @@ a.site-logo img {
   flex-direction: column-reverse;
   align-items: center;
   background: var(--dark-green);
-  margin-bottom: 5em;
+  margin-bottom: 4.5em;
   padding: 3em 1em;
 }
 
@@ -544,7 +544,7 @@ a.site-logo img {
   .brochure-section {
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 2.5em 2em;
+    padding: 4.5em 2em;
   }
 
   .brochure-section .brochure-image {
