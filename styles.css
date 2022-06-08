@@ -559,8 +559,84 @@ a.site-logo img {
   .brochure-section .brochure-content h1 {
     margin-right: 0em;
   }
-  
+
   .brochure-section .brochure-content p {
     margin-right: 0em;
   }
+}
+
+/* Panel Section  */
+.panel-section {
+  margin-top: 0em;
+  margin-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panel-section h1 {
+  color: var(--black-color);
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 0em 1.5em 1em 1.5em;
+}
+
+.panel-section .panel-content {
+  display: flex;
+  flex-direction: column;
+  width: min(90%, 50em);
+}
+
+.panel-section .panel-content .accordion {
+  background: var(--dark-green);
+  color: var(--white-color);
+  cursor: pointer;
+  padding: 1.1em;
+  font-size: 1.4rem;
+  font-weight: 700;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel-section .panel-content .active,
+.panel-section .panel-content .accordion:hover {
+  background: var(--dark-green);
+}
+
+.panel-section .panel-content .accordion:after {
+  content: "\002B";
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-left: 0.7em;
+}
+
+.panel-section .panel-content .active:after {
+  content: "\2212";
+  color: var(--white-color);
+  font-size: 1.3rem;
+  margin-left: 0.7em;
+}
+
+.panel-section .panel-content .panel {
+  background: var(--dark-green);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  margin-bottom: 1.5em;
+  user-select: none;
+}
+
+.panel-section .panel-content .panel p {
+  padding: 0em 1.2em 1.2em 1.2em;
+  width: 100%;
+  color: var(--white-color);
+  line-height: 1.7em;
+  font-size: 1rem;
 }

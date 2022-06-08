@@ -1,8 +1,13 @@
+// Navbar variables
 const navToggler = document.querySelector(".nav-toggler");
 const navMenu = document.querySelector(".site-navbar ul");
 const navLinks = document.querySelectorAll(".site-navbar a");
 const navBar = document.querySelector(".navbar-area");
+// Accordion Variables
+const accHeading = document.querySelectorAll(".accordion");
+const accPanel = document.querySelectorAll(".panel");
 
+// Navbar Set-up
 // Change navbar color when scrolled
 const changeBackground = () => {
   if (window.scrollY > 100) {
@@ -38,6 +43,32 @@ const allEventListners = () => {
 
 // load all event listners
 allEventListners();
+
+// Accordion Set-up
+// Function that shows a Panel
+const showPanel = (elem) => {
+  hidePanels();
+  elem.classList.add("active");
+  elem.nextElementSibling.style.maxHeight = `${elem.nextElementSibling.scrollHeight}px`;
+};
+
+// Function that hides all shown Panels
+const hidePanels = () => {
+  for (let i = 0; i < accPanel.length; i++) {
+    accPanel[i].style.maxHeight = null;
+    accHeading[i].classList.remove("active");
+  }
+};
+
+for (let i = 0; i < accHeading.length; i++) {
+  accHeading[i].onclick = () => {
+    if (accHeading[i].nextElementSibling.style.maxHeight) {
+      hidePanels();
+    } else {
+      showPanel(accHeading[i]);
+    }
+  };
+}
 
 // Swiper Config
 const swiper = new Swiper(".mySwiper", {
