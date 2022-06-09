@@ -70,6 +70,13 @@ for (let i = 0; i < accHeading.length; i++) {
   };
 }
 
+// Show Subscribed Alert
+const showSubscribedAlert = () => {
+  alert(
+    "Thank for subscribing to our Newsletter! Updates will be sent to your Email Account."
+  );
+};
+
 // Swiper Config
 const swiper = new Swiper(".mySwiper", {
   spaceBetween: 20,
