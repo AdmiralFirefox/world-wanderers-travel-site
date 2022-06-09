@@ -246,3 +246,58 @@ a.site-logo img {
   text-align: center;
   line-height: 1.35em;
 }
+
+/* Personalize Section */
+.personalize-section {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 5em 1.2em;
+}
+
+.personalize-section .personalize-section-image {
+  width: 100%;
+}
+
+.personalize-section .personalize-section-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.personalize-section .personalize-section-content {
+  margin-bottom: 2em;
+}
+
+.personalize-section .personalize-section-content h1 {
+  color: var(--black-color);
+  font-size: min(max(1.8rem, 3vw), 2.3rem);
+}
+
+.personalize-section .personalize-section-content p {
+  color: var(--black-color);
+  width: min(90%, 23em);
+  margin-top: 1em;
+  font-size: 1.1rem;
+  line-height: 1.5em;
+}
+
+@media screen and (min-width: 48em) {
+  .personalize-section {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin: 5em 3em;
+  }
+
+  .personalize-section .personalize-section-image {
+    width: 80em;
+    height: 30em;
+    margin-right: 2em;
+  }
+
+  .personalize-section .personalize-section-content {
+    align-self: flex-start;
+    margin: 4em 2em 0em 2em;
+  }
+}
