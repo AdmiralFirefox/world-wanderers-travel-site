@@ -305,7 +305,7 @@ a.site-logo img {
 /* Region Place Section */
 .region-place-section {
   margin-top: 8em;
-  margin-bottom: 6em;
+  margin-bottom: 4.5em;
 }
 
 .region-place-content {
@@ -345,4 +345,61 @@ a.site-logo img {
   color: var(--white-color);
   font-size: min(max(1.1em, 1.8vw), 1.5rem);
   margin: 0.6em 1em 0em 1em;
+}
+
+/* Region Card Sections */
+.region-card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0em 1.5em 6em 1.5em;
+}
+
+.region-card-section h1 {
+  color: var(--black-color);
+  font-size: min(max(1.7rem, 3vw), 2rem);
+  width: min(90%, 30em);
+  text-align: center;
+}
+
+.region-card-section .region-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+  grid-gap: 6em;
+  margin-top: 6em;
+}
+
+.region-card-section .region-card-container .region-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--dark-green);
+  border-radius: 15px;
+  padding: 1.5em;
+}
+
+.region-card-section .region-card-container .region-card-content img {
+  position: relative;
+  bottom: 5em;
+  width: 7em;
+}
+
+.region-card-section .region-card-container .region-card-content h2 {
+  color: var(--white-color);
+  text-align: center;
+  margin-top: -2.5em;
+  margin-bottom: 0.8em;
+  line-height: 1.2em;
+}
+
+.region-card-section .region-card-container .region-card-content p {
+  color: var(--white-color);
+  text-align: center;
+  line-height: 1.7em;
+}
+
+@media screen and (min-width: 48em) {
+  .region-card-section {
+    margin: 0em 3em 6em 3em;
+  }
 }
