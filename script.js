@@ -73,7 +73,7 @@ for (let i = 0; i < accHeading.length; i++) {
 // Show Subscribed Alert
 const showSubscribedAlert = () => {
   alert(
-    "Thank for subscribing to our Newsletter! Updates will be sent to your Email Account."
+    "Thank you for subscribing to our Newsletter! Updates will be sent to your Email Account."
   );
 };
 
@@ -91,4 +91,11 @@ const swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+});
+
+// AOS Config
+AOS.init({
+  once: true,
+  duration: 2000,
+  delay: 200,
 });
