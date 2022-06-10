@@ -5,6 +5,7 @@
   --black-color: #000;
   --orange-color: #c34415;
   --dark-gray-color: #555555;
+  --blue-color: #009bd6;
   --dark-gray-color-hover: hsl(0, 0%, 45%);
   --light-gray-color: #a4a4a4;
   --pink-color: #ec2d6c;
@@ -266,3 +267,220 @@ a.site-logo img {
     padding: 2.5em 2.7em;
   }
 }
+
+/* Guide Card 1 */
+.guide-card-1-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5em 1.2em;
+}
+
+.guide-card-1-section .guide-card-1-image {
+  width: 100%;
+}
+
+.guide-card-1-section .guide-card-1-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.guide-card-1-section .guide-card-1-content {
+  margin-top: 2em;
+}
+
+.guide-card-1-section .guide-card-1-content h1 {
+  color: var(--black-color);
+  font-size: min(max(1.8rem, 3vw), 2.3rem);
+}
+
+.guide-card-1-section .guide-card-1-content p {
+  color: var(--black-color);
+  width: min(100%, 30em);
+  margin-top: 1em;
+  margin-bottom: 1.3em;
+  font-size: 1.1rem;
+  line-height: 1.5em;
+}
+
+.guide-card-1-section .guide-card-1-content .view-online-link {
+  color: var(--blue-color);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.guide-card-1-section .guide-card-1-content .view-online-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 48em) {
+  .guide-card-1-section {
+    flex-direction: row;
+    justify-content: center;
+    margin: 5em 3.5em;
+  }
+
+  .guide-card-1-section .guide-card-1-image {
+    width: 200em;
+    height: 30em;
+    margin-right: 2em;
+  }
+
+  .guide-card-1-section .guide-card-1-content {
+    align-self: flex-start;
+    margin-top: 2em;
+  }
+}
+
+@media screen and (min-width: 63em) {
+  .guide-card-1-section {
+    margin: 5em 7em;
+  }
+}
+
+/* Guide Card 2 */
+.guide-card-2-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5em 1.2em;
+}
+
+.guide-card-2-section .guide-card-2-image {
+  width: 100%;
+}
+
+.guide-card-2-section .guide-card-2-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.guide-card-2-section .guide-card-2-content {
+  margin-top: 2em;
+}
+
+.guide-card-2-section .guide-card-2-content h1 {
+  color: var(--black-color);
+  font-size: min(max(1.8rem, 3vw), 2.3rem);
+}
+
+.guide-card-2-section .guide-card-2-content p {
+  color: var(--black-color);
+  width: min(100%, 30em);
+  margin-top: 1em;
+  margin-bottom: 1.3em;
+  font-size: 1.1rem;
+  line-height: 1.5em;
+}
+
+.guide-card-2-section .guide-card-2-content .view-online-link {
+  color: var(--blue-color);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.guide-card-2-section .guide-card-2-content .view-online-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 48em) {
+  .guide-card-2-section {
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 7em 3.5em;
+  }
+
+  .guide-card-2-section .guide-card-2-image {
+    width: 130em;
+    height: 30em;
+    margin-left: 2em;
+  }
+
+  .guide-card-2-section .guide-card-2-content {
+    align-self: flex-start;
+    margin-top: 2em;
+  }
+}
+
+@media screen and (min-width: 63em) {
+  .guide-card-2-section {
+    margin: 7em 7em;
+  }
+}
+
+/* Guide Card 3 */
+.guide-card-3-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5em 1.2em;
+}
+
+.guide-card-3-section .guide-card-3-image {
+  width: 100%;
+}
+
+.guide-card-3-section .guide-card-3-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.guide-card-3-section .guide-card-3-content {
+  margin-top: 2em;
+}
+
+.guide-card-3-section .guide-card-3-content h1 {
+  color: var(--black-color);
+  font-size: min(max(1.8rem, 3vw), 2.3rem);
+}
+
+.guide-card-3-section .guide-card-3-content p {
+  color: var(--black-color);
+  width: min(100%, 30em);
+  margin-top: 1em;
+  margin-bottom: 1.3em;
+  font-size: 1.1rem;
+  line-height: 1.5em;
+}
+
+.guide-card-3-section .guide-card-3-content .view-online-link {
+  color: var(--blue-color);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.guide-card-3-section .guide-card-3-content .view-online-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 48em) {
+  .guide-card-3-section {
+    flex-direction: row;
+    justify-content: center;
+    margin: 5em 3.5em;
+  }
+
+  .guide-card-3-section .guide-card-3-image {
+    width: 130em;
+    height: 30em;
+    margin-right: 2em;
+  }
+
+  .guide-card-3-section .guide-card-3-content {
+    align-self: flex-start;
+    margin-top: 2em;
+  }
+}
+
+@media screen and (min-width: 63em) {
+  .guide-card-3-section {
+    margin: 5em 7em;
+  }
+}
+
