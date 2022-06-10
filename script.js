@@ -3,6 +3,8 @@ const navToggler = document.querySelector(".nav-toggler");
 const navMenu = document.querySelector(".site-navbar ul");
 const navLinks = document.querySelectorAll(".site-navbar a");
 const navBar = document.querySelector(".navbar-area");
+// Scroll to Up
+const scrollToUpButton = document.querySelector(".scroll-to-up");
 // Accordion Variables
 const accHeading = document.querySelectorAll(".accordion");
 const accPanel = document.querySelectorAll(".panel");
@@ -30,6 +32,19 @@ const navLinkClick = () => {
   }
 };
 
+// Scroll to Top
+const buttonVisibility = () => {
+  if (window.scrollY > 100) {
+    scrollToUpButton.classList.add("scroll-active");
+  } else {
+    scrollToUpButton.classList.remove("scroll-active");
+  }
+};
+
+const scrollToUp = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
 // functions of all event listners
 const allEventListners = () => {
   // toggler icon click event
@@ -37,8 +52,12 @@ const allEventListners = () => {
   // nav links click event
   navLinks.forEach((elem) => elem.addEventListener("click", navLinkClick));
 
+  // Change Background on Scroll
   window.addEventListener("scroll", changeBackground);
   window.addEventListener("load", changeBackground);
+
+  // Change Button Visibility on Scroll
+  window.addEventListener("scroll", buttonVisibility);
 };
 
 // load all event listners
