@@ -413,3 +413,46 @@ a.site-logo img {
     width: min(100%, 23em);
   }
 }
+
+/* Scroll to Top */
+.scroll-to-up {
+  position: fixed;
+  z-index: 1;
+  bottom: 0.8em;
+  right: 0.8em;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-1em);
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+}
+
+.scroll-to-up button {
+  font-size: 2rem;
+  border: none;
+  color: var(--pink-color);
+  background: transparent;
+  cursor: pointer;
+  transition: color 0.35s ease-in-out;
+}
+
+.scroll-to-up button:hover {
+  color: var(--pink-color-hover);
+}
+
+.scroll-active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0em);
+}
+
+@media screen and (min-width: 48em) {
+  .scroll-to-up {
+    bottom: 1.3em;
+    right: 1.3em;
+  }
+
+  .scroll-to-up button {
+    font-size: 2.6rem;
+  }
+}
