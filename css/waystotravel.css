@@ -242,3 +242,75 @@ a.site-logo img {
     width: 100%;
   }
 }
+
+/* Travel Card Section */
+.travel-card-section {
+  margin-top: 3.5em;
+  margin-bottom: 6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.travel-card-section h1 {
+  color: var(--black-color);
+  text-align: center;
+  font-size: min(max(1.5rem, 2vw), 1.8rem);
+  width: min(90%, 25em);
+}
+
+.travel-card-section .travel-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+  grid-gap: 3em;
+  margin: 3em 1em 0em 1em;
+}
+
+.travel-card-section .travel-card-container .travel-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.travel-card-section
+  .travel-card-container
+  .travel-card-content
+  .travel-card-img {
+  width: 100%;
+}
+
+.travel-card-section
+  .travel-card-container
+  .travel-card-content
+  .travel-card-img
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.travel-card-section .travel-card-container .travel-card-content h2 {
+  margin-top: 0.7em;
+  font-size: 1.5rem;
+}
+
+.travel-card-section .travel-card-container .travel-card-content p {
+  width: 100%;
+  margin-top: 1em;
+  font-size: 1rem;
+  line-height: 1.4em;
+}
+
+@media screen and (min-width: 48em) {
+  .travel-card-section .travel-card-container {
+    margin: 3em 3em 0em 3em;
+  }
+}
+
+@media screen and (min-width: 63em) {
+  .travel-card-section .travel-card-container {
+    margin: 3em 7em 0em 7em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4em;
+  }
+}
