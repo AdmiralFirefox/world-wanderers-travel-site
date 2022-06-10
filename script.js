@@ -58,6 +58,7 @@ const allEventListners = () => {
 
   // Change Button Visibility on Scroll
   window.addEventListener("scroll", buttonVisibility);
+  window.addEventListener("load", buttonVisibility);
 };
 
 // load all event listners
