@@ -4,6 +4,7 @@
   --white-color: #fff;
   --black-color: #000;
   --orange-color: #c34415;
+  --yellow-color: #ffd13b;
   --dark-gray-color: #555555;
   --blue-color: #009bd6;
   --dark-gray-color-hover: hsl(0, 0%, 45%);
@@ -492,7 +493,7 @@ a.site-logo img {
   align-items: flex-start;
   grid-gap: 3.5em;
   padding: 1.5em;
-  margin: 7em 1em 6em 1em;
+  margin: 7em 1em;
   border-radius: 20px;
 }
 
@@ -519,7 +520,94 @@ a.site-logo img {
 @media screen and (min-width: 48em) {
   .personalized-card-section {
     padding: 3em 4em;
-    margin: 7em 5em 6em 5em;
+    margin: 7em 5em;
     grid-gap: 5em;
+  }
+}
+
+/* Guide Footer */
+.guide-footer {
+  background: var(--dark-color);
+  padding: 0em 1em 3.5em 1em;
+}
+
+.guide-footer .guide-footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guide-footer .guide-footer-content div:first-child {
+  width: min(90%, 20em);
+  height: 10em;
+}
+
+.guide-footer .guide-footer-content div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.guide-footer .guide-footer-content div:nth-child(2) p a {
+  color: var(--white-color);
+  text-decoration: none;
+  line-height: 2.5em;
+  transition: color 0.35s ease-in-out;
+  font-size: 1.15rem;
+}
+
+.guide-footer .guide-footer-content div:nth-child(2) p a:hover {
+  color: var(--yellow-color);
+}
+
+/* Social Links */
+.guide-footer-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.1em;
+}
+
+.guide-footer-social-links a {
+  font-size: 2.2rem;
+  margin: 0em 0.5em;
+  color: var(--dark-gray-color);
+  transition: color 0.35s ease-in-out;
+}
+
+.guide-footer-social-links a:hover {
+  color: var(--dark-gray-color-hover);
+}
+
+/* Copyright Section */
+.guide-copyright-section {
+  margin-top: 1.25em;
+}
+
+.guide-copyright-section .guide-copyright-divider {
+  background: var(--light-gray-color);
+  width: 100%;
+  height: 0.25em;
+}
+
+.guide-copyright-section p {
+  color: var(--light-gray-color);
+  text-align: center;
+  margin-top: 1.5em;
+  font-size: 0.85rem;
+}
+
+@media screen and (min-width: 48em) {
+  .guide-footer {
+    padding: 5em;
+  }
+
+  .guide-footer .guide-footer-content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .guide-footer .guide-footer-content div:first-child {
+    width: min(100%, 23em);
   }
 }
