@@ -213,7 +213,8 @@ a.site-logo img {
 
 /* Guides Hero Section */
 .guides-hero-section {
-  background: url("/assets/guidesandmapspage/WaterFalls.jpg"), rgba(0, 0, 0, 0.3);
+  background: url("/assets/guidesandmapspage/WaterFalls.jpg"),
+    rgba(0, 0, 0, 0.3);
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-size: cover;
@@ -235,3 +236,33 @@ a.site-logo img {
   text-align: center;
 }
 
+/* Planning Section */
+.planning-section {
+  display: flex;
+  justify-content: center;
+  background: var(--orange-color);
+  padding: 2.5em 1.5em;
+}
+
+.planning-section .planning-section-content {
+  width: min(90%, 40em);
+}
+
+.planning-section .planning-section-content h1 {
+  color: var(--white-color);
+  text-align: center;
+  font-size: min(max(1.7rem, 3.5vw), 2.5rem);
+}
+
+.planning-section .planning-section-content p {
+  color: var(--white-color);
+  text-align: center;
+  font-size: min(max(1rem, 1.5vw), 1.3rem);
+  margin-top: 1.25em;
+}
+
+@media screen and (min-width: 48em) {
+  .planning-section {
+    padding: 2.5em 2.7em;
+  }
+}
