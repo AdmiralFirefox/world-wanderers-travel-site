@@ -277,6 +277,7 @@ a.site-logo img {
   .travel-card-content
   .travel-card-img {
   width: 100%;
+  overflow: hidden;
 }
 
 .travel-card-section
@@ -287,6 +288,16 @@ a.site-logo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.35s ease-in-out;
+}
+
+.travel-card-section
+  .travel-card-container
+  .travel-card-content
+  .travel-card-img
+  img:hover {
+  transform: scale(1.8);
 }
 
 .travel-card-section .travel-card-container .travel-card-content h2 {
