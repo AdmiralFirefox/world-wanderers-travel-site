@@ -214,7 +214,7 @@ a.site-logo img {
 
 /* Travel Hero Section */
 .travel-hero-section {
-  background: url("/assets/waystotravelpage/RoadTrips.jpg"), rgba(0, 0, 0, 0.3);
+  background: url("../assets/waystotravelpage/RoadTrips.jpg"), rgba(0, 0, 0, 0.3);
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-size: cover;

@@ -214,7 +214,7 @@ a.site-logo img {
 
 /* Regions Hero Section */
 .regions-hero-section {
-  background: url("/assets/regionspage/RegionsBackground.jpg"),
+  background: url("../assets/regionspage/RegionsBackground.jpg"),
     rgba(0, 0, 0, 0.4);
   background-repeat: no-repeat;
   background-blend-mode: multiply;

@@ -215,7 +215,7 @@ a.site-logo img {
 
 /* Guides Hero Section */
 .guides-hero-section {
-  background: url("/assets/guidesandmapspage/WaterFalls.jpg"),
+  background: url("../assets/guidesandmapspage/WaterFalls.jpg"),
     rgba(0, 0, 0, 0.4);
   background-repeat: no-repeat;
   background-blend-mode: multiply;
@@ -654,4 +654,3 @@ a.site-logo img {
     font-size: 2.6rem;
   }
 }
-
