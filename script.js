@@ -3,8 +3,8 @@ const navToggler = document.querySelector(".nav-toggler");
 const navMenu = document.querySelector(".site-navbar ul");
 const navLinks = document.querySelectorAll(".site-navbar a");
 const navBar = document.querySelector(".navbar-area");
-// Scroll to Up
-const scrollToUpButton = document.querySelector(".scroll-to-up");
+// Scroll to Top
+const scrollToTopButton = document.querySelector(".scroll-to-up");
 // Accordion Variables
 const accHeading = document.querySelectorAll(".accordion");
 const accPanel = document.querySelectorAll(".panel");
@@ -35,9 +35,9 @@ const navLinkClick = () => {
 // Scroll to Top
 const buttonVisibility = () => {
   if (window.scrollY > 100) {
-    scrollToUpButton.classList.add("scroll-active");
+    scrollToTopButton.classList.add("scroll-active");
   } else {
-    scrollToUpButton.classList.remove("scroll-active");
+    scrollToTopButton.classList.remove("scroll-active");
   }
 };
 
